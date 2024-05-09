@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driving School Training Program</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS here */
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.5s;
+    }
+        /* Logo */
+        .navbar-brand img {
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .display-new{
+      padding: 20px 0px 0px 0px;
+      font-size: 45px;
+    }
+
+    /* Apply hover effect to all devices */
+    @media (hover: hover) {
+      .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s;
+        
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="LOGO 2.png" alt="Logo">Karthikeya Driving School</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="page1.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero text-center" style="background-color: khaki; padding-bottom: 20px;">
+    <div class="container">
+      <h2 class="display-new">WELCOME TO KARTHIKEYA MOTOR DRIVING TRAINING SCHOOL</h2>
+      <h2 class="display-4">Learn Pass Drive</h2>
+      <p class="lead">Join our driving school training program and become a safe and confident driver.</p>
+      <a href="#register" class="btn btn-primary btn-lg">Register Now</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">What We Offer</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Professional Instructors</h5>
+              <p class="card-text">Our instructors are experienced professionals dedicated to teaching safe driving habits.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Flexible Scheduling</h5>
+              <p class="card-text">We offer flexible scheduling to accommodate your busy lifestyle.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Comprehensive Training</h5>
+              <p class="card-text">Our program covers all aspects of driving to ensure you are fully prepared.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-5" style="background-color: beige;">
+    <div class="container">
+      <h2 class="text-center mb-4">Pricing</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Basic Package</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="card-text font-weight-bold">$199</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Standard Package</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="card-text font-weight-bold">$299</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Premium Package</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="card-text font-weight-bold">$399</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register Section -->
+  <section id="register" class="py-5 bg-light" class="register-box">
+    <div class="container">
+      <h2 class="text-center mb-4">Register Now</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form action="submit.php" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="text" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="package">Select Package</label>
+              <select class="form-control" id="package" name="package">
+                <option value="Basic">Basic</option>
+                <option value="Standard">Standard</option>
+                <option value="Premium">Premium</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Our Location</h4>
+          <!-- Embedded Google Map -->
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7921.320146423279!2d-74.00594147536314!3d40.71277652221499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDU0JzE1LjAiTiA3NMKwMzMnMzMuMiJX!5e0!3m2!1sen!2sus!4v1620109240718!5m2!1sen!2sus" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Contact Information</h4>
+          <ul class="list-group">
+            <li class="list-group-item">Phone: +1 123 456 7890</li>
+            <li class="list-group-item">Email: info@drivingschool.com</li>
+            <li class="list-group-item">Address: 123 Main St, City, State, Zip</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="text-center mb-4">About Us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec leo eu augue consequat maximus.</p>
+          <p>Our driving school program focuses on providing comprehensive training to help you become a safe and confident driver.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="steering3.jpg" alt="About Us" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5" style="background-color: honeydew;">
+    <div class="container">
+      <h2 class="text-center mb-4">Testimonials</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec leo eu augue consequat maximus."</p>
+              <p class="card-text font-italic">- John Doe</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec leo eu augue consequat maximus."</p>
+              <p class="card-text font-italic">- Jane Doe</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec leo eu augue consequat maximus."</p>
+              <p class="card-text font-italic">- Mary Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Driving School. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Register Now</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="submit.php" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="text" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="package">Select Package</label>
+              <select class="form-control" id="package" name="package">
+                <option value="Basic">Basic</option>
+                <option value="Standard">Standard</option>
+                <option value="Premium">Premium</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

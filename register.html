@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            transition: background-color 0.3s ease;
+            overflow: hidden;
+        }
+        .name-title{
+            font-size: 15px;
+        }
+        .regd_title{
+            font-size: 12px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #001b55;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+        nav a {
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            position: relative;
+            z-index: 1;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+    
+        /* Media queries for responsiveness */
+        @media only screen and (max-width: 768px) {
+            header {
+                padding: 10px 0;
+                font-size: 10px;
+    
+            }
+            nav {
+                padding: 5px 0;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+            .container {
+                padding: 10px;
+            }
+            .content {
+                padding: 10px;
+            }
+            footer {
+                padding: 5px 0;
+            }
+        }
+    
+        /* Steering wheel animation */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+    
+        .hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+    
+        .steering-wheel {
+            width: 80px;
+            height: 80px;
+            background: url('steering_wheel1.png') no-repeat;
+            background-size: contain; /* corrected typo */
+            transform: rotate(0deg);
+            animation: rotation 1.5s infinite linear;
+        }
+    
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    
+        /* Logo images */
+        .logo-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    
+        .logo-container img {
+            width: 60px;
+            height: auto;
+            margin: 0 8px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <!-- <img src="muruga.jpg" alt="Logo 1">
+         <img src="LOGO 2.png" alt="Logo 2">-->
+         <div class="name_title">KARTHIKEYA MOTOR DRIVING SCHOOL<span class="regd_title"><br>(Regd. by Govt. of Karnataka)</span></div>
+     </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Our Services</a>
+            <a href="register.html">Register</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+</header>
+
+
+<div class="container">
+    <div class="content">
+        <h2>Register</h2>
+        <form>
+            <input type="text" name="fullname" placeholder="Full Name" required><br>
+            <input type="email" name="email" placeholder="Email Address" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Driving School</p>
+</footer>
+
+<script>
+    window.onload = function() {
+        document.querySelector('.container').style.opacity = '1';
+        document.querySelector('.container').style.transform = 'translateY(0)';
+    }
+</script>
+
+</body>
+</html>
